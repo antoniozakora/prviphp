@@ -1,35 +1,26 @@
-<!DOCTIPE html>
+<!DOCTYPE html>
 <html>
 <head>
-        <title>PRVI PHP</title>
-        <meta charset="utf-8">
+    <title>Prvi PHP</title>
+    <meta charset="utf-8">
 </head>
 
 <body>
-<h1>Zaky je najbolji</h1>
-<form>
-    Prvi broj: <br>
+<h1>Prvi PHP</h1>
+
+<form method = "post" action="rezultat.php">
+    Prvi broj:<br>
     <input type="text" name="broj1"><br>
-    Drugi broj: <br>
+    Drugi broj:<br>
     <input type="text" name="broj2"><br>
+    Treci broj:<br>
+    <input type="text" name="broj3"><br>
     <br>
-    <input type="submit" values="Izračunaj">
-
-
-
+    <input type="text" name="ime"><br>
+    <br>
+    <input type="submit" value="Izračunaj">
 </form>
-<?php
-    echo('Ovo je prije odlomka<br>');
-    echo('<br>');
-    echo('Super, još ćemo dodati<br>');
 
-    echo(date('d.m.Y.'));
 
-    $rezultat = $_GET['broj1'] + $_GET['broj2'];
-    echo('<br>Rezultat: ' . $rezultat);
-?>
-<p>
-    Ovo je odlomak
-</p>
 </body>
 </html>
