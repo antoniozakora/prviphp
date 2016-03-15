@@ -11,15 +11,20 @@
 
 
 <?php
-echo('Vaše ime: ' . htmlspecialchars($_POST['ime']));
+$cijena = $_POST['broj_litara'] * 8.5;
 
-$select = '';
-$rezultat = $_POST['broj1'] + $_POST['broj2'] + $_POST['broj3'];
-echo('<br>' . $rezultat);
+echo('Cijena goriva: ' . $cijena . ' kn');
+
+if ($cijena > 500)
+{
+    echo('<br>Pa to ćemo morati na rate uzeti!' );
+}
+if ($cijena < 500)
+{
+    echo('<br>Možemo uzeti gotovinom!' );
+}
 ?>
 
-<p>
-    Ovo je odlomak
-</p>
+
 </body>
 </html>
